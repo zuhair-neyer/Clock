@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEFA; /* Light sky blue */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white; /* Default button color */
+    color: #4CAF50; /* Button text color */
+    border: 2px solid #4CAF50; /* Button border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  nav button:hover {
+    background-color: #4CAF50; /* Hover background color */
+    color: white; /* Hover text color */
+  }
+  
+  .section {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  button, input[type="time"], input[type="number"], select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #calendar {
+    max-width: 100%;
+    height: auto;
+    background-color: black; /* Calendar background color */
+    color: white; /* Calendar text color */
+  }
+  
+  #stopwatchDisplay, #timerDisplay {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #4CAF50; /* Footer background color */
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .country-time {
+    margin-top: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    nav button {
+      width: 100%;
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  }
+  

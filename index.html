@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zuhair's Clock & Calendar App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Zuhair's Project</h1>
+      <nav>
+        <button id="showAlarm">Alarm</button>
+        <button id="showCalendar">Calendar</button>
+        <button id="showStopwatch">Stopwatch</button>
+        <button id="showWorldClock">World Clock</button>
+      </nav>
+    </header>
+
+    <!-- Alarm Section -->
+    <div class="section" id="alarmSection" style="display: none;">
+      <h2>Alarm Clock</h2>
+      <div id="alarmsContainer">
+        <input type="time" id="alarmTime">
+        <button id="setAlarm">Set Alarm</button>
+      </div>
+      <div id="alarmList"></div>
+      <div id="alarmMessage"></div>
+      <audio id="alarmSound" src="ringtone.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Calendar Section -->
+    <div class="section" id="calendarSection" style="display: none;">
+      <h2>Interactive Calendar</h2>
+      <div id="calendar"></div>
+    </div>
+
+    <!-- Stopwatch Section -->
+    <div class="section" id="stopwatchSection" style="display: none;">
+      <h2>Stopwatch</h2>
+      <p id="stopwatchDisplay">00:00:00.000</p>
+      <button id="startStopwatch">Start</button>
+      <button id="stopStopwatch">Stop</button>
+      <button id="resetStopwatch">Reset</button>
+    </div>
+
+    <!-- Timer Section -->
+    <div class="section" id="timerSection" style="display: none;">
+      <h2>Timer</h2>
+      <input type="number" id="timerMinutes" placeholder="Minutes">
+      <input type="number" id="timerSeconds" placeholder="Seconds">
+      <button id="startTimer">Start Timer</button>
+      <button id="resetTimer">Reset Timer</button>
+      <p id="timerDisplay">00:00</p>
+      <audio id="timerSound" src="timer.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- World Clock Section -->
+    <div class="section" id="worldClockSection" style="display: none;">
+      <h2>World Clock</h2>
+      <label for="countrySelect">Select Country:</label>
+      <select id="countrySelect">
+        <option value="">Loading countries...</option>
+      </select>
+      <div id="countryTimes"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Zuhair. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
